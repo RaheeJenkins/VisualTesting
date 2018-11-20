@@ -2,6 +2,7 @@ package tests.github;
 
 import base.BaseUtil;
 import org.testng.annotations.Test;
+
 public class LoginPage extends BaseUtil {
 
     @Test

@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test Automation" parallel="tests">
 
-    <test name="Chrome">
+    <test name="Chrome GitHub Login Page">
 
         <parameter name="environment" value="Grid" />
         <parameter name="browser" value="Chrome" />
@@ -13,45 +13,81 @@
         </classes>
     </test>
 
-    <!--<test name="Chrome 2">-->
+    <test name="Chrome GitHub Signup Page">
 
-        <!--<parameter name="environment" value="Local" />-->
-        <!--<parameter name="browser" value="Chrome" />-->
-        <!--<parameter name="URL" value="https://github.com/join?source=experiment-header-dropdowns-home" />-->
+        <parameter name="environment" value="Grid" />
+        <parameter name="browser" value="Chrome" />
+        <parameter name="URL" value="https://github.com/join?source=experiment-header-dropdowns-home" />
 
-        <!--<classes>-->
-            <!--<class name="tests.github.SignUpPage" />-->
-        <!--</classes>-->
-    <!--</test>-->
+        <classes>
+            <class name="tests.github.SignUpPage" />
+        </classes>
+    </test>
 
-    <!--<test name="Firefox">-->
+    <test name="Firefox GitHub Login Page">
 
-        <!--<parameter name="environment" value="Grid" />-->
-        <!--<parameter name="browser" value="Firefox" />-->
+        <parameter name="environment" value="Grid" />
+        <parameter name="browser" value="Firefox" />
+        <parameter name="URL" value="https://github.com/login" />
 
-        <!--<classes>-->
-            <!--<class name="tests.VisualTesting1" />-->
-        <!--</classes>-->
-    <!--</test>-->
+        <classes>
+            <class name="tests.github.LoginPage" />
+        </classes>
+    </test>
 
-    <!--<test name="IE">-->
+    <test name="Firefox GitHub Signup Page">
 
-        <!--<parameter name="environment" value="Grid" />-->
-        <!--<parameter name="browser" value="IE" />-->
+        <parameter name="environment" value="Grid" />
+        <parameter name="browser" value="Firefox" />
+        <parameter name="URL" value="https://github.com/join?source=experiment-header-dropdowns-home" />
 
-        <!--<classes>-->
-            <!--<class name="tests.VisualTesting1" />-->
-        <!--</classes>-->
-    <!--</test>-->
+        <classes>
+            <class name="tests.github.SignUpPage" />
+        </classes>
+    </test>
 
-    <!--<test name="Safari">-->
+    <test name="Safari GitHub Login Page">
 
-        <!--<parameter name="environment" value="Grid" />-->
-        <!--<parameter name="browser" value="Safari" />-->
+        <parameter name="environment" value="Grid" />
+        <parameter name="browser" value="Safari" />
+        <parameter name="URL" value="https://github.com/login" />
 
-        <!--<classes>-->
-            <!--<class name="tests.VisualTesting1" />-->
-        <!--</classes>-->
-    <!--</test>-->
+        <classes>
+            <class name="tests.github.LoginPage" />
+        </classes>
+    </test>
+
+    <test name="Safari GitHub Signup Page">
+
+        <parameter name="environment" value="Grid" />
+        <parameter name="browser" value="Safari" />
+        <parameter name="URL" value="https://github.com/join?source=experiment-header-dropdowns-home" />
+
+        <classes>
+            <class name="tests.github.SignUpPage" />
+        </classes>
+    </test>
+
+    <test name="IE GitHub Login Page">
+
+        <parameter name="environment" value="Grid" />
+        <parameter name="browser" value="IE" />
+        <parameter name="URL" value="https://github.com/login" />
+
+        <classes>
+            <class name="tests.github.LoginPage" />
+        </classes>
+    </test>
+
+    <test name="IE GitHub Signup Page">
+
+        <parameter name="environment" value="Grid" />
+        <parameter name="browser" value="IE" />
+        <parameter name="URL" value="https://github.com/join?source=experiment-header-dropdowns-home" />
+
+        <classes>
+            <class name="tests.github.SignUpPage" />
+        </classes>
+    </test>
 
 </suite>

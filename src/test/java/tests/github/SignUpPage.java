@@ -7,7 +7,7 @@ public class SignUpPage extends BaseUtil {
 
     @Test
     public void validate_Create_Your_Personal_Account_Elements() {
-        in.Visual.verify(driver,"TestPage");
+        in.Visual.verify(driver,"Github Signup Page");
         System.out.println(in.Visual.getLastResultUrl());
     }
 

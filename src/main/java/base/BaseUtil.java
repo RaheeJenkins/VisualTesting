@@ -57,7 +57,7 @@ public class BaseUtil {
 
     private void getChromeBrowser(String environment, String testName) {
         if (environment.equalsIgnoreCase("Local")) {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rahee\\IdeaProjects\\VisualTesting\\driver\\chromedriver.exe");
             driver = new ChromeDriver();
         } else if (environment.equalsIgnoreCase("Grid")) {
             dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);
@@ -67,7 +67,7 @@ public class BaseUtil {
 
     private void getFirefoxBrowser(String environment, String testName) {
         if (environment.equalsIgnoreCase("Local")) {
-            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/driver/geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", "C:\\Users\\Rahee\\IdeaProjects\\VisualTesting\\driver\\geckodriver.exe");
             driver = new FirefoxDriver();
         } else if (environment.equalsIgnoreCase("Grid")) {
             dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.FIREFOX);

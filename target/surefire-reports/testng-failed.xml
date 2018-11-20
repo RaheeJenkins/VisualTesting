@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Test Automation]" parallel="tests">
+  <test thread-count="5" verbose="0" name="Chrome(failed)" parallel="tests">
+    <parameter name="environment" value="Local"/>
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="tests.github.LoginPage">
+        <methods>
+          <include name="validate_Input_Fields_And_Surrounding_Elements"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.github.LoginPage -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [Test Automation] -->

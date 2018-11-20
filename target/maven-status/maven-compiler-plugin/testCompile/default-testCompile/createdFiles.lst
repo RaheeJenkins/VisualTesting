@@ -1,0 +1,6 @@
+tests\GitHubLoginPage.class
+tests\github\LoginPage.class
+tests\VisualTesting1.class
+tests\github\SignUpPage.class
+tests\VisualTesting.class
+tests\GitHubLogin.class

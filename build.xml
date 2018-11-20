@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation" parallel="tests">
+
+    <test name="Chrome">
+
+        <parameter name="environment" value="Local" />
+        <parameter name="browser" value="Chrome" />
+        <parameter name="URL" value="https://github.com/login" />
+
+        <classes>
+            <class name="tests.github.LoginPage" />
+        </classes>
+    </test>
+
+    <!--<test name="Chrome 2">-->
+
+        <!--<parameter name="environment" value="Local" />-->
+        <!--<parameter name="browser" value="Chrome" />-->
+        <!--<parameter name="URL" value="https://github.com/join?source=experiment-header-dropdowns-home" />-->
+
+        <!--<classes>-->
+            <!--<class name="tests.github.SignUpPage" />-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Firefox">-->
+
+        <!--<parameter name="environment" value="Grid" />-->
+        <!--<parameter name="browser" value="Firefox" />-->
+
+        <!--<classes>-->
+            <!--<class name="tests.VisualTesting1" />-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="IE">-->
+
+        <!--<parameter name="environment" value="Grid" />-->
+        <!--<parameter name="browser" value="IE" />-->
+
+        <!--<classes>-->
+            <!--<class name="tests.VisualTesting1" />-->
+        <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Safari">-->
+
+        <!--<parameter name="environment" value="Grid" />-->
+        <!--<parameter name="browser" value="Safari" />-->
+
+        <!--<classes>-->
+            <!--<class name="tests.VisualTesting1" />-->
+        <!--</classes>-->
+    <!--</test>-->
+
+</suite>

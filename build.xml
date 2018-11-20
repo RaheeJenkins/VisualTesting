@@ -4,7 +4,7 @@
 
     <test name="Chrome">
 
-        <parameter name="environment" value="Local" />
+        <parameter name="environment" value="Grid" />
         <parameter name="browser" value="Chrome" />
         <parameter name="URL" value="https://github.com/login" />
 
